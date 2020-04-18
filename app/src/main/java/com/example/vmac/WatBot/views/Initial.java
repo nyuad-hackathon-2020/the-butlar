@@ -1,4 +1,4 @@
-package com.example.vmac.WatBot.models;
+package com.example.vmac.WatBot.views;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.vmac.WatBot.views.MainActivity;
 import com.example.vmac.WatBot.R;
 
 public class Initial extends AppCompatActivity {
