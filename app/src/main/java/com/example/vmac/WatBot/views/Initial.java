@@ -28,5 +28,17 @@ public class Initial extends AppCompatActivity {
     }
 
     public void goToHistory(View view) {
+        Intent intent = new Intent(Initial.this, HistoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToWishList(View view) {
+        Intent intent = new Intent(Initial.this, WishlistActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToProfile(View view) {
+        Intent intent = new Intent(Initial.this, ProfileActivity.class);
+        startActivity(intent);
     }
 }
