@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Initial">
+
+    <TextView
+        android:id="@+id/textview3"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="366dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Push the carrot to ask me"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="515dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:text="Howdy, Christian" />
+
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="81dp"
+        android:layout_height="21dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="wishlist" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="621dp"
+        android:background="@null"
+        app:srcCompat="@drawable/info" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="622dp"
+        android:background="@null"
+        app:srcCompat="@drawable/user" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="61dp"
+        android:background="@null"
+        app:srcCompat="@drawable/history" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="61dp"
+        android:background="@null"
+        app:srcCompat="@drawable/wishlist" />
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="39dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="history" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="215dp"
+        android:layout_height="188dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="138dp"
+        android:background="@null"
+        app:srcCompat="@drawable/talkbtn" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="75dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="589dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="BUTLAR" />
+
+
+</RelativeLayout>
