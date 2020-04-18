@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Butlar</string>
-    <string name="what_s_on_your_mind">Enter Your Query</string>
+    <string name="what_s_on_your_mind">Enter the request for your Butlar</string>
     <string name="menu_refresh">Refresh</string>
 </resources>
