@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     inputMessage = findViewById(R.id.message);
     btnSend = findViewById(R.id.btn_send);
     btnRecord = findViewById(R.id.btn_record);
-    String customFont = "Montserrat-Regular.ttf";
+    String customFont = "font/montserrat.ttf";
     Typeface typeface = Typeface.createFromAsset(getAssets(), customFont);
     inputMessage.setTypeface(typeface);
     recyclerView = findViewById(R.id.recycler_view);

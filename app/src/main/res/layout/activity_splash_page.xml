@@ -7,9 +7,34 @@
     android:background="@color/colorPrimary"
     tools:context="com.example.vmac.WatBot.views.SplashPage">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src=""
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:src="@drawable/whitelogo"/>
+
+        <ImageView
+            android:layout_width="@dimen/logoiconwidth"
+            android:layout_height="@dimen/logoiconwidth"
+            android:src="@drawable/carrot"
+            android:clickable="true"
+            android:onClick="goToLogin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap Carrot to Continue"
+            android:paddingTop="@dimen/continuetoppadding"
+            android:textSize="@dimen/continuetextsize"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

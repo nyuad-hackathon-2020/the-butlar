@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vmac.WatBot.views.LoginActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:src="@drawable/orangelogo"/>
+
+        <EditText
+            android:id="@+id/usernameEdit"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Username"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="@dimen/continuetoppadding"
+            android:textSize="@dimen/maintextsize"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Password"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/maintextsize"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="30dp"
+            android:text="Get to Carroting"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/maintextsize"
+            android:clickable="true"
+            android:onClick="goToHome"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have a Butlar already?"
+                android:fontFamily="@font/montserrat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  GET ONE"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorPrimary"
+                android:clickable="true"
+                android:onClick="goToSignUp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

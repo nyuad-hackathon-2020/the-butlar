@@ -10,32 +10,23 @@ import android.widget.TextView;
 import com.example.vmac.WatBot.R;
 
 public class Initial extends AppCompatActivity {
-
-    TextView TypesofQs;
-    ImageButton AccB, infoB, historyB, wishlistB, carrotB;
+    ImageButton carrotButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initial);
 
-        infoB= (ImageButton) findViewById(R.id.imageButton);
-        AccB= (ImageButton) findViewById(R.id.imageButton2);
-        carrotB= (ImageButton) findViewById(R.id.imageButton3);
-        historyB= (ImageButton) findViewById(R.id.imageButton4);
-        wishlistB= (ImageButton) findViewById(R.id.imageButton5);
-
-
-        carrotB.setOnClickListener(new View.OnClickListener() {
+        carrotButton = findViewById(R.id.carrotButton);
+        carrotButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 Intent intent = new Intent(Initial.this, MainActivity.class);
                 startActivity(intent);
             }
         });
+    }
 
-
-
+    public void goToHistory(View view) {
     }
 }
