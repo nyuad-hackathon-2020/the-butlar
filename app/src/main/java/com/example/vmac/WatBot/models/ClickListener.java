@@ -1,4 +1,4 @@
-package com.example.vmac.WatBot;
+package com.example.vmac.WatBot.models;
 
 import android.view.View;
 

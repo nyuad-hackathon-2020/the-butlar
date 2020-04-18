@@ -1,4 +1,4 @@
-package com.example.vmac.WatBot;
+package com.example.vmac.WatBot.models;
 
 /**
  * Created by VMac on 17/11/16.
@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.vmac.WatBot.R;
 
 import java.util.ArrayList;
 

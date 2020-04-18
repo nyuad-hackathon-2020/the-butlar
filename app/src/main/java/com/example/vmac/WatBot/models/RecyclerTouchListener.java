@@ -1,4 +1,4 @@
-package com.example.vmac.WatBot;
+package com.example.vmac.WatBot.models;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

@@ -1,8 +1,10 @@
-package com.example.vmac.WatBot;
+package com.example.vmac.WatBot.views;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.vmac.WatBot.models.Initial;
 
 public class SplashActivity extends AppCompatActivity {
 

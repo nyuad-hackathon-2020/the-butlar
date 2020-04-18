@@ -1,4 +1,4 @@
-package com.example.vmac.WatBot;
+package com.example.vmac.WatBot.models;
 
 /**
  * Created by Vidyasagar Machupalli on 17/11/16.

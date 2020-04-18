@@ -1,4 +1,4 @@
-package com.example.vmac.WatBot;
+package com.example.vmac.WatBot.views;
 
 import android.Manifest;
 import android.content.Context;
@@ -23,6 +23,11 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.vmac.WatBot.R;
+import com.example.vmac.WatBot.models.ChatAdapter;
+import com.example.vmac.WatBot.models.ClickListener;
+import com.example.vmac.WatBot.models.Message;
+import com.example.vmac.WatBot.models.RecyclerTouchListener;
 import com.ibm.cloud.sdk.core.http.HttpMediaType;
 import com.ibm.cloud.sdk.core.http.Response;
 import com.ibm.cloud.sdk.core.http.ServiceCall;
