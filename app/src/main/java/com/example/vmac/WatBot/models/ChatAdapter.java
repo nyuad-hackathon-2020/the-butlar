@@ -91,11 +91,6 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             message = (TextView) itemView.findViewById(R.id.message);
             image = (ImageView) itemView.findViewById(R.id.image);
 
-            //TODO: Uncomment this if you want to use a custom Font
-            /*String customFont = "montserrat.ttf";
-            Typeface typeface = Typeface.createFromAsset(itemView.getContext().getAssets(), customFont);
-            message.setTypeface(typeface);*/
-
         }
     }
 

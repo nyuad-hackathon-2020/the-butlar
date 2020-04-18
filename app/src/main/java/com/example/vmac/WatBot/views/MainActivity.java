@@ -2,6 +2,7 @@ package com.example.vmac.WatBot.views;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     inputMessage = findViewById(R.id.message);
     btnSend = findViewById(R.id.btn_send);
     btnRecord = findViewById(R.id.btn_record);
-    String customFont = "font/montserrat.ttf";
+    String customFont = "fonts/montserrat.ttf";
     Typeface typeface = Typeface.createFromAsset(getAssets(), customFont);
     inputMessage.setTypeface(typeface);
     recyclerView = findViewById(R.id.recycler_view);
@@ -236,7 +237,6 @@ public class MainActivity extends AppCompatActivity {
                             inputMessage.setMessage(inputmessage);
                             inputMessage.setId("100");
                             this.initialRequest = false;
-                            Toast.makeText(getApplicationContext(), "Tap on the message for Voice", Toast.LENGTH_LONG).show();
 
                         }
 
@@ -422,6 +422,11 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         });
+    }
+
+    public void goBackToInitial(View view) {
+        Intent intent = new Intent(this, Initial.class);
+        startActivity(intent);
     }
 
 
