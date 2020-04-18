@@ -18,7 +18,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.HistoryActivity"></activity>
+        <activity android:name=".views.ItemActivity"></activity>
+        <activity android:name=".views.HistoryActivity" />
         <activity android:name=".views.WishlistActivity" />
         <activity android:name=".views.ProfileActivity" />
         <activity android:name=".views.SignUpActivity" />

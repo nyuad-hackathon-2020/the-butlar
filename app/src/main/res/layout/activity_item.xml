@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vmac.WatBot.views.ItemActivity"
+    android:background="#FDF1E6">
+
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/logout"/>
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blacklogo"/>
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/user"
+        android:clickable="true"
+        android:onClick="goToProfile"/>
+
+    <LinearLayout
+        android:layout_below="@id/logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="20dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/topItemImage"
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/fine"
+                        android:layout_margin="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/topProductNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:text="6 Rolls 2ply Toilet Paper"/>
+
+                        <TextView
+                            android:id="@+id/topBrandNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            android:text="Fine"/>
+
+                        <TextView
+                            android:id="@+id/topPriceNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:text="12.48 AED"/>
+
+                        <TextView
+                            android:id="@+id/topStoreNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            android:text="Carrefour"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@color/white"/>
+
+                    <Button
+                        android:id="@+id/proceedBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="30dp"
+                        android:background="null"
+                        android:text="@string/proceed"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/montserrat"
+                        android:clickable="true"
+                        android:onClick="proceedItem"/>
+
+                    <Button
+                        android:id="@+id/addWishlistBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@drawable/wishlist"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:clickable="true"
+                        android:onClick="addToWishlist"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/mapImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:onClick="goToMap"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="130dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="5dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/secondItemImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/quilted"
+                            android:layout_margin="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/secondProductNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="13sp"
+                                android:text="12 Rolls Toi..."/>
+
+                            <TextView
+                                android:id="@+id/secondBrandNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12sp"
+                                android:text="Quilted"/>
+
+                            <TextView
+                                android:id="@+id/secondPriceNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp"
+                                android:text="12.45 AED"/>
+
+                            <TextView
+                                android:id="@+id/secondStoreNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12sp"
+                                android:text="LuLu"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/viewThirdBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="null"
+                        android:text="View Item"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/montserrat"
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        android:onClick="viewThirdItem"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="130dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="20dp"
+                android:background="@color/white"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/thirdItemImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/angelsoft"
+                            android:layout_margin="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/thirdProductNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="13sp"
+                                android:text="24 Rolls Pa..."/>
+
+                            <TextView
+                                android:id="@+id/thirdBrandNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12sp"
+                                android:text="AngelSoft"/>
+
+                            <TextView
+                                android:id="@+id/thirdPriceNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp"
+                                android:text="12.50 AED"/>
+
+                            <TextView
+                                android:id="@+id/thirdStoreNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12sp"
+                                android:text="Spinneys"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/viewSecondBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="null"
+                        android:text="View Item"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/montserrat"
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        android:onClick="viewSecondItem"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="History"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:drawableTop="@drawable/back"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:onClick="backToInitial"/>
+
+    <Button
+        android:id="@+id/wishListBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="WishList"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:drawableTop="@drawable/wishlist"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:onClick="goToWishList"/>
+
+</RelativeLayout>
