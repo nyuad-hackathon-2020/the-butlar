@@ -11,11 +11,14 @@ import com.example.vmac.WatBot.R;
 
 public class Initial extends AppCompatActivity {
     ImageButton carrotButton;
+    TextView username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initial);
+
+        username = findViewById(R.id.usernameText);
 
         carrotButton = findViewById(R.id.carrotButton);
         carrotButton.setOnClickListener(new View.OnClickListener() {

@@ -13,9 +13,9 @@ public class Dummy {
     public List<Store> stores = new ArrayList<>();
     private static Dummy INSTANCE = null;
 
-    public Dummy getINSTANCE(Context context) {
-        if (Dummy.INSTANCE == null) {
-            Dummy.INSTANCE = new Dummy(context);
+    public static Dummy getINSTANCE(Context context) {
+        if (INSTANCE == null) {
+            INSTANCE = new Dummy(context);
         }
 
         return INSTANCE;

@@ -1,5 +1,8 @@
 package com.example.vmac.WatBot.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
     String username;
     String email;
@@ -8,73 +11,94 @@ public class User {
     Gender gender;
     String telephone;
     Country country;
+    List<Item> wishlist = new ArrayList<>();
+    List<Item> history = new ArrayList<>();
+    public static User currentUser;
 
-    public User(String username, String email, String password, String name, Gender gender, String telephone, Country country) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-        this.name = name;
-        this.gender = gender;
-        this.telephone = telephone;
-        this.country = country;
+    public User(String username, String email, String password, String name, Gender gender, String telephone, Country country, List<Item> wishlist, List<Item> history) {
+        User.currentUser.username = username;
+        User.currentUser.email = email;
+        User.currentUser.password = password;
+        User.currentUser.name = name;
+        User.currentUser.gender = gender;
+        User.currentUser.telephone = telephone;
+        User.currentUser.country = country;
+        User.currentUser.wishlist = wishlist;
+        User.currentUser.history = history;
     }
 
     public User() {
     }
 
     public String getUsername() {
-        return username;
+        return User.currentUser.username;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        User.currentUser.username = username;
     }
 
     public String getEmail() {
-        return email;
+        return User.currentUser.email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        User.currentUser.email = email;
     }
 
     public String getPassword() {
-        return password;
+        return User.currentUser.password;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        User.currentUser.password = password;
     }
 
     public String getName() {
-        return name;
+        return User.currentUser.name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        User.currentUser.name = name;
     }
 
     public Gender getGender() {
-        return gender;
+        return User.currentUser.gender;
     }
 
     public void setGender(Gender gender) {
-        this.gender = gender;
+        User.currentUser.gender = gender;
     }
 
     public String getTelephone() {
-        return telephone;
+        return User.currentUser.telephone;
     }
 
     public void setTelephone(String telephone) {
-        this.telephone = telephone;
+        User.currentUser.telephone = telephone;
     }
 
     public Country getCountry() {
-        return country;
+        return User.currentUser.country;
     }
 
     public void setCountry(Country country) {
-        this.country = country;
+        User.currentUser.country = country;
+    }
+
+    public List<Item> getWishlist() {
+        return User.currentUser.wishlist;
+    }
+
+    public void setWishlist(List<Item> wishlist) {
+        User.currentUser.wishlist = wishlist;
+    }
+
+    public List<Item> getHistory() {
+        return User.currentUser.history;
+    }
+
+    public void setHistory(List<Item> history) {
+        User.currentUser.history = history;
     }
 }
