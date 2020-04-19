@@ -1,11 +1,12 @@
 package com.example.vmac.WatBot.views;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vmac.WatBot.R;
 import com.example.vmac.WatBot.models.HistoryAdapter;
@@ -33,5 +34,8 @@ public class HistoryActivity extends AppCompatActivity {
     public void goToWishList(View view) {
         Intent intent = new Intent(this, WishlistActivity.class);
         startActivity(intent);
+    }
+
+    public void goToProfile(View view) {
     }
 }

@@ -31,8 +31,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.Initial" />
-        <activity android:name=".views.MainActivity" />
+        <activity android:name=".views.Initial">
+
+        </activity>
+        <activity android:name=".views.MainActivity" >
+        </activity>
     </application>
 
 </manifest>

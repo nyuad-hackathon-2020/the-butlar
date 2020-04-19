@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "161601000582",
+    "firebase_url": "https://butlar-703cf.firebaseio.com",
+    "project_id": "butlar-703cf",
+    "storage_bucket": "butlar-703cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161601000582:android:4e12e03b2a7f8cb2476d07",
+        "android_client_info": {
+          "package_name": "com.example.vmac.WatBot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161601000582-tkj1cfh8e3gqqm0pbd07idqk5vkun3fb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vmac.WatBot",
+            "certificate_hash": "f86508c314c73ed8f03cafc368bd8bb2604fc62d"
+          }
+        },
+        {
+          "client_id": "161601000582-mv6ad82tp62lja2k71ojb8huogs5tji2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7WtDAsTAdNgekbs8weJ3kjHhHcGw5UFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161601000582-mv6ad82tp62lja2k71ojb8huogs5tji2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

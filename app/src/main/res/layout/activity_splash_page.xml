@@ -19,6 +19,15 @@
             android:layout_height="@dimen/logoheight"
             android:src="@drawable/whitelogo"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your family-member-y bot"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:paddingBottom="30dp"/>
+
         <ImageView
             android:layout_width="@dimen/logoiconwidth"
             android:layout_height="@dimen/logoiconwidth"
