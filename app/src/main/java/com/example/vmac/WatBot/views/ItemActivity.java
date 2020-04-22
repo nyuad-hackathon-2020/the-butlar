@@ -3,6 +3,7 @@ package com.example.vmac.WatBot.views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,52 +15,51 @@ import com.example.vmac.WatBot.models.Dummy;
 import com.example.vmac.WatBot.models.User;
 
 public class ItemActivity extends AppCompatActivity {
-    Item topItem = Dummy.getINSTANCE(this).stores.get(0).getStorage().get(0);
-    Item secondItem = Dummy.getINSTANCE(this).stores.get(1).getStorage().get(0);
-    Item thirdItem = Dummy.getINSTANCE(this).stores.get(2).getStorage().get(0);
+    //Item topItem = Dummy.getINSTANCE(this).stores.get(0).getStorage().get(0);
+    //Item secondItem = Dummy.getINSTANCE(this).stores.get(1).getStorage().get(0);
+    //Item thirdItem = Dummy.getINSTANCE(this).stores.get(2).getStorage().get(0);
     ImageView topImage, secondImage, thirdImage;
     TextView topName, secondName, thirdName;
     TextView topBrand, secondBrand, thirdBrand;
     TextView topPrice, secondPrice, thirdPrice;
     TextView topStore, secondStore, thirdStore;
+    Button wishlistAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
 
-        topImage = findViewById(R.id.topItemImage);
-        topImage.setImageBitmap(topItem.getPicture());
-        topName = findViewById(R.id.topProductNameText);
-        topName.setText(topItem.getName());
-        topBrand = findViewById(R.id.topBrandNameText);
-        topBrand.setText(topItem.getBrand());
-        topPrice = findViewById(R.id.topPriceNameText);
-        topPrice.setText(String.valueOf(topItem.getPrice()));
-        topStore = findViewById(R.id.topStoreNameText);
-        topStore.setText(Dummy.getINSTANCE(this).stores.get(0).getName());
-
-        secondImage = findViewById(R.id.secondItemImage);
-        secondImage.setImageBitmap(secondItem.getPicture());
-        secondName = findViewById(R.id.secondProductNameText);
-        secondName.setText(secondItem.getName());
-        secondBrand = findViewById(R.id.secondBrandNameText);
-        secondBrand.setText(secondItem.getBrand());
-        secondPrice = findViewById(R.id.secondPriceNameText);
-        secondPrice.setText(String.valueOf(secondItem.getPrice()));
-        secondStore = findViewById(R.id.secondStoreNameText);
-        secondStore.setText(Dummy.getINSTANCE(this).stores.get(1).getName());
-
-        thirdImage = findViewById(R.id.thirdItemImage);
-        thirdImage.setImageBitmap(thirdItem.getPicture());
-        thirdName = findViewById(R.id.thirdProductNameText);
-        thirdName.setText(thirdItem.getName());
-        thirdBrand = findViewById(R.id.thirdBrandNameText);
-        thirdBrand.setText(thirdItem.getBrand());
-        thirdPrice = findViewById(R.id.thirdPriceNameText);
-        thirdPrice.setText(String.valueOf(thirdItem.getPrice()));
-        thirdStore = findViewById(R.id.thirdStoreNameText);
-        thirdStore.setText(Dummy.getINSTANCE(this).stores.get(2).getName());
+        wishlistAdd = findViewById(R.id.addWishlistBtn);
+//        topImage = findViewById(R.id.topItemImage);
+//        topName = findViewById(R.id.topProductNameText);
+//        topName.setText(topItem.getName());
+//        topBrand = findViewById(R.id.topBrandNameText);
+//        topBrand.setText(topItem.getBrand());
+//        topPrice = findViewById(R.id.topPriceNameText);
+//        topPrice.setText(String.valueOf(topItem.getPrice()));
+//        topStore = findViewById(R.id.topStoreNameText);
+//        topStore.setText(Dummy.getINSTANCE(this).stores.get(0).getName());
+//
+//        secondImage = findViewById(R.id.secondItemImage);
+//        secondName = findViewById(R.id.secondProductNameText);
+//        secondName.setText(secondItem.getName());
+//        secondBrand = findViewById(R.id.secondBrandNameText);
+//        secondBrand.setText(secondItem.getBrand());
+//        secondPrice = findViewById(R.id.secondPriceNameText);
+//        secondPrice.setText(String.valueOf(secondItem.getPrice()));
+//        secondStore = findViewById(R.id.secondStoreNameText);
+//        secondStore.setText(Dummy.getINSTANCE(this).stores.get(1).getName());
+//
+//        thirdImage = findViewById(R.id.thirdItemImage);
+//        thirdName = findViewById(R.id.thirdProductNameText);
+//        thirdName.setText(thirdItem.getName());
+//        thirdBrand = findViewById(R.id.thirdBrandNameText);
+//        thirdBrand.setText(thirdItem.getBrand());
+//        thirdPrice = findViewById(R.id.thirdPriceNameText);
+//        thirdPrice.setText(String.valueOf(thirdItem.getPrice()));
+//        thirdStore = findViewById(R.id.thirdStoreNameText);
+//        thirdStore.setText(Dummy.getINSTANCE(this).stores.get(2).getName());
     }
 
     public void goToWishList(View view) {
@@ -79,6 +79,7 @@ public class ItemActivity extends AppCompatActivity {
 
     public void addToWishlist(View view) {
         //User.currentUser.getWishlist().add(topItem);
+        wishlistAdd.setBackgroundResource(R.drawable.filled_wishlist);
     }
 
     public void goToMap(View view) {
@@ -92,15 +93,15 @@ public class ItemActivity extends AppCompatActivity {
     }
 
     public void viewSecondItem(View view) {
-        Item temp = topItem;
-        topItem = secondItem;
-        secondItem = temp;
+        //Item temp = topItem;
+        //topItem = secondItem;
+        //secondItem = temp;
     }
 
     public void viewThirdItem(View view) {
-        Item temp = topItem;
-        topItem = thirdItem;
-        thirdItem = temp;
+        //Item temp = topItem;
+        //topItem = thirdItem;
+        //thirdItem = temp;
     }
 
     public void goToHistory(View view) {

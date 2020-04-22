@@ -430,6 +430,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToItems(View view) {
+        Intent intent = new Intent(this, ItemActivity.class);
+        startActivity(intent);
+    }
+
 
     private class SayTask extends AsyncTask<String, Void, String> {
         @Override

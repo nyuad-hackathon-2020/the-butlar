@@ -10,7 +10,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vmac.WatBot.R;
 import com.example.vmac.WatBot.models.HistoryAdapter;
+import com.example.vmac.WatBot.models.Item;
 import com.example.vmac.WatBot.models.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HistoryActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -23,7 +27,9 @@ public class HistoryActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.historyRecycler);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new HistoryAdapter(this, User.currentUser.getHistory()));
+        List<Item> items = new ArrayList<>();
+        items.add(new Item("milk", "marai", 30, 12.48, null));
+        recyclerView.setAdapter(new HistoryAdapter(this, items));
     }
 
     public void backToInitial(View view) {

@@ -65,7 +65,7 @@
 
         </LinearLayout>
 
-        <ImageView
+        <Button
             android:id="@+id/trashItem"
             android:layout_width="30dp"
             android:layout_height="30dp"

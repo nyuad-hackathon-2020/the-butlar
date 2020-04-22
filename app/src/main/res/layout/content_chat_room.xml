@@ -13,11 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="6">
 
         <Button
             android:id="@+id/backButton"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
             android:layout_height="80dp"
             android:text="Back"
             android:drawableStart="@drawable/back"
@@ -28,6 +30,26 @@
             android:textSize="20sp"
             android:clickable="true"
             android:onClick="goBackToInitial"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/itemButton"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="Items"
+            android:drawableEnd="@drawable/send"
+            android:background="#00FFFFFF"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:onClick="goToItems"/>
 
     </LinearLayout>
 

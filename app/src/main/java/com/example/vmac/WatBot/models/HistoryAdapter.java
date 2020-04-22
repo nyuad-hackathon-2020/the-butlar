@@ -32,23 +32,25 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryV
 
     @Override
     public void onBindViewHolder(HistoryViewHolder holder, final int position) {
-        holder.productImage.setImageBitmap(items.get(position).getPicture());
-        holder.productName.setText(items.get(position).getName());
-        holder.productBrand.setText(items.get(position).getBrand());
-        holder.productPrice.setText(String.valueOf(items.get(position).getPrice()));
+        holder.productImage.setImageResource(R.drawable.marai);
+        holder.productName.setText("Low Fat Milk 500ml");
+        holder.productBrand.setText("Marai");
+        holder.productPrice.setText("2.90AED");
 
-        for (int i = 0; i < Dummy.getINSTANCE(context).stores.size(); i++) {
-            if (Dummy.getINSTANCE(context).stores.get(i).storage.contains(items.get(position))) {
-                holder.productStore.setText(Dummy.getINSTANCE(context).stores.get(i).getName());
-                break;
-            }
-        }
+        holder.productStore.setText("Carrefour");
+//        for (int i = 0; i < Dummy.getINSTANCE(context).stores.size(); i++) {
+//            if (Dummy.getINSTANCE(context).stores.get(i).storage.contains(items.get(position))) {
+//                holder.productStore.setText(Dummy.getINSTANCE(context).stores.get(i).getName());
+//                break;
+//            }
+//        }
 
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                User.currentUser.getHistory().remove(items.get(position));
-                items.remove(items.get(position));
+//                User.currentUser.getHistory().remove(items.get(position));
+//                items.remove(items.get(position));
+
             }
         });
     }
